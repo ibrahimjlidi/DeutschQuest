@@ -1,0 +1,21 @@
+{
+  "id": "./learn-german-course.html",
+  "name": "DeutschQuest - German A1 to B2",
+  "short_name": "DeutschQuest",
+  "description": "Learn German with vocabulary, grammar, exercises, and pronunciation practice from A1 to B2.",
+  "lang": "en",
+  "start_url": "./learn-german-course.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2f6ff",
+  "theme_color": "#d71927",
+  "icons": [
+    {
+      "src": "./icons/deutschquest.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

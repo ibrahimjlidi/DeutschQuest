@@ -3,7 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Wortschatz – German A1 to B2</title>
+<title>DeutschQuest – German A1 to B2</title>
+<meta name="theme-color" content="#d71927">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/deutschquest.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="Capture.JPG">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f2f6ff;--card:#ffffff;--ink:#101a32;--mute:#53627b;--line:#d8e2f0;--der:#1456b8;--die:#d92736;--das:#263b62;--ok:#188b5b;--bad:#c72b37;--primary:#d71927;--primary-2:#a90f20;--accent:#ffd12e;--soft:#e6efff;--red:#d71927;--blue:#1456b8;--yellow:#ffd12e;--shadow:rgba(16,34,66,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -503,6 +510,7 @@ if(navWrap&&!navWrap.querySelector('[data-t="curriculum"]')){
  navWrap.appendChild(btn);
 }
 try{speechSynthesis.getVoices()}catch(e){}
+if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(()=>{});}
 let initialTab = "welcome";
 tab = initialTab;
 render();
