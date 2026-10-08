@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wortschatz – German A1 to B2</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6ff;--card:#ffffff;--ink:#101a32;--mute:#53627b;--line:#d8e2f0;--der:#1456b8;--die:#d92736;--das:#263b62;--ok:#188b5b;--bad:#c72b37;--primary:#d71927;--primary-2:#a90f20;--accent:#ffd12e;--soft:#e6efff;--red:#d71927;--blue:#1456b8;--yellow:#ffd12e;--shadow:rgba(16,34,66,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101827;--card:#18243a;--ink:#f5f7fc;--mute:#b8c5da;--line:#30415e;--der:#78aaff;--die:#ff6673;--das:#9cb6df;--ok:#50d099;--bad:#ff6a77;--primary:#ef3340;--primary-2:#bd1228;--accent:#ffd84d;--soft:#202e49;--red:#ff4050;--blue:#78aaff;--yellow:#ffd84d;--shadow:rgba(3,10,22,.42)}}
+:root[data-theme="dark"]{--bg:#101827;--card:#18243a;--ink:#f5f7fc;--mute:#b8c5da;--line:#30415e;--der:#78aaff;--die:#ff6673;--das:#9cb6df;--ok:#50d099;--bad:#ff6a77;--primary:#ef3340;--primary-2:#bd1228;--accent:#ffd84d;--soft:#202e49;--red:#ff4050;--blue:#78aaff;--yellow:#ffd84d;--shadow:rgba(3,10,22,.42)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle,rgba(20,43,83,.055) .8px,transparent .9px);background-size:18px 18px;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.5}
+main{max-width:440px;margin:24px auto;padding:0 10px 28px}
+header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin-bottom:14px;gap:8px}
+header h1{justify-self:center}
+.header-group{display:flex;align-items:center;min-height:32px}
+.header-group:last-child{justify-content:flex-end}
+.header-btn{border:1px solid var(--line);background:rgba(255,255,255,.7);color:var(--ink);border-radius:999px;padding:7px 12px;font-weight:700;cursor:pointer;box-shadow:0 8px 18px rgba(26,33,65,.06)}
+.header-btn.subtle{background:rgba(215,25,39,.08);border-color:rgba(215,25,39,.2);color:var(--ink)}
+.header-btn.hidden{display:none}
+.welcome-screen{position:relative;min-height:72vh;background:#f8fbff;border:1px solid var(--line);border-top:4px solid var(--red);border-radius:28px;overflow:hidden;box-shadow:0 24px 42px var(--shadow);padding:20px 20px 18px;display:flex;flex-direction:column;justify-content:space-between}
+.welcome-screen::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center, rgba(20,86,184,.045), transparent 62%);pointer-events:none}
+.welcome-mascot{display:block;width:min(100%,320px);aspect-ratio:1;object-fit:contain;margin:0 auto 12px;z-index:1;mix-blend-mode:multiply;filter:drop-shadow(0 12px 0 rgba(24,22,26,.14))}
+.welcome-copy{text-align:center;color:var(--ink);padding-top:8px}
+.welcome-copy h2{margin:0 0 8px;font-size:2.8rem;letter-spacing:-.08em;line-height:1.05;font-weight:900}
+.welcome-copy p{margin:0;font-size:1.05rem;font-weight:700;opacity:.82}
+.welcome-cta{width:100%;border:0;border-radius:14px;background:linear-gradient(180deg,#ed2939,#bf1025);color:#fff;font-weight:900;padding:18px 20px;cursor:pointer;font-size:1.2rem;letter-spacing:.02em;box-shadow:0 12px 24px rgba(215,25,39,.24)}
+.welcome-secondary{width:100%;margin-top:16px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);font-weight:800;padding:18px 20px;cursor:pointer;box-shadow:0 4px 10px rgba(16,34,66,.04)}
+.welcome-brand{display:flex;align-items:center;justify-content:space-between;padding:12px 0 0;color:#0e2437;font-weight:800;font-size:1.15rem}
+.welcome-brand .mark{width:28px;height:28px;border-radius:50%;background:#0b1d30;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem}
+.welcome-brand .name{font-size:2.1rem;font-weight:800;letter-spacing:-.04em}
+.welcome-logo{display:flex;align-items:center;gap:12px;justify-content:center}
+.welcome-logo .mark{width:24px;height:24px;border-radius:50%;background:#0b1d30;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+.welcome-logo .name{font-size:2.1rem;letter-spacing:-.05em}
+.welcome-mini{display:flex;align-items:center;justify-content:center;padding-top:14px}
+.welcome-mini .line{height:4px;border-radius:999px;background:rgba(14,36,55,.2);width:100%;max-width:220px}
+.hidden{display:none!important}
+h1{font-size:1.5rem;margin:0;font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.05rem;margin:22px 0 8px}
+.stat{color:var(--mute);font-size:.9rem}
+nav{display:flex;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px;margin-bottom:16px}
+nav button{flex:1;border:0;background:none;color:var(--mute);font:inherit;font-weight:600;padding:9px;border-radius:9px;cursor:pointer}
+nav button[aria-pressed="true"]{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff}
+button{font:inherit;color:var(--ink)}
+button:focus-visible{outline:3px solid var(--der);outline-offset:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 18px;text-align:center;min-height:220px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px}
+.unit-shell{display:flex;flex-direction:column;gap:16px;padding-top:6px}
+.unit-card{background:linear-gradient(180deg,#ffffff,#edf4ff);border:1px solid rgba(20,33,61,.08);border-radius:20px;padding:16px 14px 12px;box-shadow:0 14px 22px rgba(18,31,52,.06)}
+.unit-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.unit-badge{display:inline-flex;align-items:center;justify-content:center;padding:7px 12px;border-radius:999px;background:linear-gradient(135deg,#ffe983,#ffd12e);color:#302600;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.unit-score{display:flex;align-items:center;gap:8px;color:#1d2f2f;font-weight:800;font-size:.8rem}
+.unit-score .dot{width:10px;height:10px;border-radius:50%;background:var(--red);display:inline-block}
+.unit-card h3{margin:0 0 14px;font-size:1.35rem;letter-spacing:-.04em}
+.unit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.unit-lesson{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:#fff;border:2px solid #cbdcf3;border-radius:16px;min-height:88px;padding:10px 8px;color:#183154;cursor:pointer;font-weight:800;box-shadow:0 6px 12px rgba(16,32,50,.04)}
+.unit-lesson .mini-icon{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#ed2939,#bf1025);color:#fff;font-size:1.05rem;box-shadow:inset 0 -6px 10px rgba(0,0,0,.08)}
+.unit-lesson.locked{opacity:.46;filter:grayscale(.12);cursor:not-allowed}
+.unit-lesson.done{border-color:#a9ebba;background:#ebfff3}
+.unit-lesson.active{border-color:#6ca0e5;background:#eaf2ff}
+.unit-lesson span{font-size:.75rem;text-align:center;line-height:1.2}
+.word{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.der{color:var(--der)}.die{color:var(--die)}.das{color:var(--das)}
+.sub{color:var(--mute);font-size:1.1rem}
+.q{color:var(--mute);margin:0}
+.row{display:flex;gap:10px;margin-top:12px}
+.btn,.opt{flex:1;font-weight:600;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--card);cursor:pointer}
+.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.opts{display:grid;gap:10px;margin-top:12px}
+.opt.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+.opt.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.fb{min-height:1.5em;margin-top:10px;text-align:center;font-weight:600}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:12px}
+.bar i{display:block;height:100%;background:var(--primary);transition:width .25s}
+.les{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;padding:12px 14px;margin-bottom:8px;border-radius:12px;border:1px solid var(--line);background:var(--card);cursor:pointer}
+.les[disabled]{opacity:.45;cursor:not-allowed}
+.les.cur{border-color:var(--der);border-width:2px}
+.tag{font-size:.85rem;color:var(--mute)}
+.pass{color:var(--ok);font-weight:600}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px}
+.rule p{margin:0 0 6px;font-weight:600}
+.chip{border:1px solid var(--line);background:var(--bg);border-radius:20px;padding:5px 12px;margin:0 6px 6px 0;cursor:pointer}
+.back{background:none;border:0;color:var(--mute);cursor:pointer;padding:0}
+.top{display:flex;justify-content:space-between;margin-bottom:8px;color:var(--bad)}
+.inp{width:100%;padding:13px;font:inherit;font-size:1.1rem;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);margin-top:12px}
+.line{min-height:56px;border-bottom:2px solid var(--line);padding:6px 0;margin-top:12px}
+.used{opacity:.25;pointer-events:none}
+.okc{color:var(--ok)}.badc{color:var(--bad)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.cols .opt{display:block;width:100%;margin-bottom:8px}
+.opt.sel{border:2px solid var(--der)}
+.opt:disabled{cursor:default}
+.mic-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;background:var(--ink);color:var(--bg);padding:12px 18px;min-width:150px;box-shadow:0 6px 18px rgba(20,33,61,.12)}
+.mic-btn .mic{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.08);font-size:1.15rem;line-height:1}
+.mic-btn.is-listening{background:#0d8de8;box-shadow:0 0 0 8px rgba(31,154,230,.12), 0 6px 18px rgba(31,154,230,.25)}
+.mic-btn.is-correct{background:#24b26b;box-shadow:0 0 0 8px rgba(36,178,107,.12), 0 6px 18px rgba(36,178,107,.2)}
+.heard{min-height:1.5em;margin-top:8px;text-align:center;font-weight:600;color:var(--mute)}
+.speech-panel{display:flex;flex-direction:column;gap:12px;padding-top:6px}
+.speech-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 16px 12px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;min-height:230px}
+.speech-word{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;color:var(--ink)}
+.speech-sub{font-size:1rem;color:var(--mute)}
+.speech-mic-wrap{display:flex;justify-content:center;padding:12px 0 8px}
+.speech-mic{width:136px;height:136px;border-radius:50%;border:3px solid #1f9ae6;background:#1f9ae6;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(31,154,230,.25), inset 0 0 0 2px rgba(255,255,255,.22);font-size:3.2rem;line-height:1;padding:0;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease}
+.speech-mic:hover{transform:translateY(-1px)}
+.speech-mic:active{transform:scale(.98)}
+.speech-mic.is-listening{background:#0d8de8;border-color:#0d8de8;box-shadow:0 0 0 10px rgba(31,154,230,.12), 0 6px 18px rgba(31,154,230,.25)}
+.speech-mic.is-correct{background:#24b26b;border-color:#24b26b;box-shadow:0 0 0 10px rgba(36,178,107,.12), 0 6px 18px rgba(36,178,107,.2)}
+.speech-mic .mic{font-size:3.1rem;transform:translateY(3px)}
+.volume-wrap{width:100%;max-width:220px;padding-top:2px}
+.volume-bar{position:relative;height:6px;border-radius:999px;background:rgba(31,154,230,.15);overflow:hidden}
+.volume-fill{position:absolute;inset:0 auto 0 0;width:0%;border-radius:inherit;background:linear-gradient(90deg,#1f9ae6,#7ad7ff);transition:width .12s ease-out}
+.speech-status{min-height:24px;color:var(--mute);font-size:1rem;font-weight:600}
+.speech-status.ok{color:var(--ok)}
+.speech-status.bad{color:var(--bad)}
+.speech-recognized{min-height:22px;margin-top:2px;font-size:1rem;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.speech-actions{justify-content:center}
+.speech-actions .btn{max-width:220px}
+.speech-label{font-size:1rem;color:var(--mute);font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="header-group"><button class="header-btn hidden" id="header-back" type="button">← Back</button></div>
+  <h1>Wortschatz</h1>
+  <div class="header-group"><button class="header-btn subtle hidden" id="header-exit" type="button">✕ Exit</button></div>
+</header>
+<span class="stat" id="stat"></span>
+<nav aria-label="Sections"><button data-t="path" aria-pressed="true">Course</button><button data-t="sounds" aria-pressed="false">Pronunciation</button></nav>
+<div class="bar" aria-hidden="true"><i id="bar" style="width:0"></i></div>
+<section id="view"></section>
+</main>
+<script>
+function welcome(){
+  const header=document.querySelector("header"); if(header) header.style.display="none";
+  const nav=document.querySelector("nav"); if(nav) nav.style.display="none";
+  const bar=document.getElementById("bar"); if(bar&&bar.parentElement) bar.parentElement.style.display="none";
+  const stat=document.getElementById("stat"); if(stat) stat.style.display="none";
+  document.querySelectorAll("nav button").forEach(b=>b.classList.add("hidden"));
+  V.innerHTML=`<div class="welcome-screen">
+    <div></div>
+    <img class="welcome-mascot" src="Capture.JPG" alt="Spider-Man mascot">
+    <div class="welcome-copy">
+      <h2>Am I dreaming?</h2>
+      <p>Saw, ready to swing into German?</p>
+    </div>
+    <div>
+      <button class="welcome-cta" id="welcome-start">LET'S GO!</button>
+      <button class="welcome-secondary" id="welcome-continue" type="button">Continue</button>
+    </div>
+  </div>`;
+  const openCourse=()=>{tab="path";S=null;render();};
+  const startBtn=document.getElementById("welcome-start");
+  const continueBtn=document.getElementById("welcome-continue");
+  if(startBtn){startBtn.onclick=openCourse;}
+  if(continueBtn){continueBtn.onclick=openCourse;}
+}
+
+const L=[
+["A1.1","Greetings","Hallo|hello;Guten Morgen|good morning;Guten Abend|good evening;Tschüss|bye;Danke|thank you"],
+["A1.1","Introductions","Ich heiße|my name is;Wie geht's?|how are you?;Ich komme aus|I come from;Ich bin|I am;Freut mich|nice to meet you"],
+["A1.1","Numbers 1–10","eins|one;zwei|two;drei|three;vier|four;fünf|five;sechs|six;sieben|seven;acht|eight;neun|nine;zehn|ten"],
+["A1.2","Food and drink","das Brot|bread;das Wasser|water;der Kaffee|coffee;die Milch|milk;der Apfel|apple"],
+["A1.2","Family","die Mutter|mother;der Vater|father;der Bruder|brother;die Schwester|sister;das Kind|child"],
+["A1.2","Everyday verbs","ich esse|I eat;ich trinke|I drink;ich wohne|I live;ich arbeite|I work;ich lerne|I learn"],
+["A2.1","Travel","der Bahnhof|train station;der Zug|train;die Fahrkarte|ticket;der Flughafen|airport;die Straße|street"],
+["A2.1","Shopping","Wie viel kostet das?|how much is it?;zu teuer|too expensive;das Geld|money;kaufen|to buy;bezahlen|to pay"],
+["A2.1","Time and days","Montag|Monday;heute|today;morgen|tomorrow;gestern|yesterday;die Woche|week"],
+["A2.2","Health","der Arzt|doctor;die Medizin|medicine;Ich habe Kopfschmerzen|I have a headache;der Termin|appointment;krank|sick"],
+["A2.2","Past tense","Ich habe gegessen|I ate;Ich bin gegangen|I went;Ich war müde|I was tired;Wir haben gespielt|we played;Er ist gekommen|he came"],
+["A2.2","Home","die Wohnung|apartment;die Küche|kitchen;das Zimmer|room;die Miete|rent;der Nachbar|neighbour"],
+["B1.1","Opinions","Ich glaube, dass|I think that;meiner Meinung nach|in my opinion;Ich stimme zu|I agree;Das sehe ich anders|I see it differently;Es kommt darauf an|it depends"],
+["B1.1","Work","die Bewerbung|job application;der Lebenslauf|CV;das Vorstellungsgespräch|job interview;die Erfahrung|experience;der Kollege|colleague"],
+["B1.1","Plans and conditions","Ich würde gern reisen|I would like to travel;falls|in case;wenn|if, when;obwohl|although;Ich hoffe, dass|I hope that"],
+["B1.2","Environment","die Umwelt|environment;das Klima|climate;der Müll|rubbish;nachhaltig|sustainable;die Verschmutzung|pollution"],
+["B1.2","Media","die Nachrichten|news;die Zeitung|newspaper;veröffentlichen|to publish;die Werbung|advertising;der Bericht|report"],
+["B1.2","Feelings","enttäuscht|disappointed;begeistert|enthusiastic;sich ärgern|to be annoyed;vermissen|to miss;Ich mache mir Sorgen|I'm worried"],
+["B2.1","Society","die Gesellschaft|society;die Gleichberechtigung|equality;die Verantwortung|responsibility;die Entwicklung|development;die Herausforderung|challenge"],
+["B2.1","Arguing","einerseits|on the one hand;andererseits|on the other hand;darüber hinaus|furthermore;dennoch|nevertheless;folglich|consequently"],
+["B2.1","Passive and formal","Es wird gebaut|it is being built;Das wurde beschlossen|it was decided;Es lässt sich erklären|it can be explained;in Anbetracht|in view of;sofern|provided that"],
+["B2.2","Science and economy","die Forschung|research;die Wirtschaft|economy;das Wachstum|growth;die Steuer|tax;der Fortschritt|progress"],
+["B2.2","Idioms","Das ist mir Wurst|I don't care;Daumen drücken|fingers crossed;Ich habe die Nase voll|I'm fed up;Das liegt auf der Hand|it's obvious;Es geht um die Wurst|everything is at stake"],
+["B2.2","Formal writing","Sehr geehrte Damen und Herren|Dear Sir or Madam;Mit freundlichen Grüßen|kind regards;Bezugnehmend auf|with reference to;Ich bitte um Rückmeldung|please reply;Anbei finden Sie|attached you will find"]];
+const R=[["ch after a, o, u is a throaty sound","Bach, Buch, Nacht"],["ch after e, i is soft, like a hiss","ich, Milch, Licht"],["ei sounds like English 'eye'","nein, Zeit, Wein"],["ie is a long 'ee'","Liebe, Brief, Tier"],["w sounds like English v","Wasser, wir, Wein"],["v is usually f","Vater, viel, von"],["z is 'ts'","Zeit, Zug, zehn"],["ä, ö, ü are rounded vowels","Mädchen, schön, über"],["ß is a sharp s","Straße, heiß, Grüße"],["sp and st at the start say shp, sht","Sprache, Stadt, Straße"]];
+const E=[
+"Guten Morgen, wie geht es dir?|Good morning, how are you?|___ Abend!|Guten|Gute,Guten,Guter|Abend is masculine and the greeting is accusative: Guten Abend.",
+"Ich heiße Sami und komme aus Tunesien.|My name is Sami and I come from Tunisia.|Ich ___ aus Tunesien.|komme|kommst,komme,kommen|With ich the verb ends in -e.",
+"Ich habe zwei Brüder.|I have two brothers.|Zwei plus drei ist ___.|fünf|vier,fünf,sechs|2 + 3 = fünf.",
+"Ich trinke gern Wasser.|I like to drink water.|Ich trinke ___ Kaffee.|den|der,den,dem|Kaffee is masculine; as the object it takes den (accusative).",
+"Meine Mutter ist Lehrerin.|My mother is a teacher.|Das ist ___ Schwester.|meine|mein,meine,meinen|Schwester is feminine, so meine.",
+"Wir wohnen in Tunis.|We live in Tunis.|Er ___ in Berlin.|wohnt|wohne,wohnt,wohnen|With er/sie/es the verb ends in -t.",
+"Der Zug fährt um acht Uhr.|The train leaves at eight o'clock.|Ich fahre ___ Bahnhof.|zum|zu,zum,zur|zu + dem = zum (der Bahnhof).",
+"Ich möchte ein Brot kaufen.|I would like to buy a bread.|Ich möchte das Brot ___.|kaufen|kaufe,kaufen,kauft|After möchte the second verb goes to the end as an infinitive.",
+"Heute ist Montag, morgen ist Dienstag.|Today is Monday, tomorrow is Tuesday.|Gestern ___ ich müde.|war|bin,war,wäre|Simple past of sein: ich war.",
+"Ich muss zum Arzt gehen.|I have to go to the doctor.|Ich gehe ___ Arzt.|zum|zum,zur,im|der Arzt takes zum.",
+"Gestern habe ich Fußball gespielt.|Yesterday I played football.|Ich ___ nach Hause gegangen.|bin|habe,bin,war|Verbs of movement form the perfect with sein.",
+"Die Wohnung hat zwei Zimmer.|The apartment has two rooms.|Die Miete ___ teuer.|ist|sind,ist,bin|Singular subject: ist.",
+"Ich glaube, dass er heute kommt.|I think that he is coming today.|Ich glaube, dass er heute ___.|kommt|kommen,kommt,komme|After dass the verb goes to the end; er takes -t.",
+"Ich schreibe meine Bewerbung.|I am writing my application.|Ich bewerbe ___ um die Stelle.|mich|mir,mich,sich|Reflexive verb sich bewerben: ich bewerbe mich.",
+"Wenn es regnet, bleibe ich zu Hause.|If it rains, I stay at home.|Wenn es regnet, ___ ich zu Hause.|bleibe|bleibe,bleibt,bleiben|After a wenn-clause the verb comes first in the main clause.",
+"Wir müssen die Umwelt schützen.|We must protect the environment.|Wir müssen den Müll ___.|trennen|trennen,getrennt,trennt|Modal verb + infinitive at the end.",
+"Der Bericht wurde gestern veröffentlicht.|The report was published yesterday.|Der Bericht ___ gestern veröffentlicht.|wurde|wird,wurde,hat|Past passive: wurde + past participle.",
+"Ich bin von dem Film begeistert.|I am thrilled by the film.|Ich freue mich ___ das Wochenende.|auf|über,auf,an|sich freuen auf = look forward to.",
+"Jeder trägt Verantwortung für die Gesellschaft.|Everyone bears responsibility for society.|Das ist eine große ___.|Herausforderung|Herausforderung,Herausfordernd,herausfordern|After eine große a feminine noun follows.",
+"Einerseits ist es teuer, andererseits ist es praktisch.|On one hand it is expensive, on the other it is practical.|Es regnet, ___ gehen wir spazieren.|dennoch|weil,dennoch,damit|dennoch = nevertheless, and it does not send the verb to the end.",
+"Das Haus wird gebaut.|The house is being built.|Das Haus wird ___.|gebaut|baut,gebaut,bauen|Passive: werden + past participle.",
+"Die Forschung braucht mehr Geld.|Research needs more money.|Die Wirtschaft ___ stark.|wächst|wächst,wachst,wachse|wachsen: er/sie/es wächst.",
+"Das ist mir Wurst.|I do not care.|Ich drücke dir die ___.|Daumen|Daumen,Finger,Hände|Fixed idiom: Daumen drücken.",
+"Sehr geehrte Damen und Herren, ich bewerbe mich.|Dear Sir or Madam, I am applying.|Mit freundlichen ___|Grüßen|Grüße,Grüßen,Grüßt|Fixed formula: Mit freundlichen Grüßen."];
+const N=[
+["A1.1","Colors","rot|red;blau|blue;grün|green;gelb|yellow;schwarz|black","Das Auto ist rot.|The car is red.|Das Auto ist ___.|rot|rot,rote,roten|After sein the adjective takes no ending."],
+["A1.1","Question words","wer|who;was|what;wo|where;wann|when;warum|why","Wo wohnst du?|Where do you live?|___ wohnst du?|Wo|Wer,Wo,Wann|Wo asks for a place."],
+["A1.2","Numbers 11–100","elf|eleven;zwölf|twelve;zwanzig|twenty;fünfzig|fifty;hundert|one hundred","Ich bin zwanzig Jahre alt.|I am twenty years old.|Ich ___ zwanzig Jahre alt.|bin|habe,bin,heiße|German uses sein for age: ich bin ... Jahre alt."],
+["A1.2","Animals","der Hund|dog;die Katze|cat;der Vogel|bird;das Pferd|horse;der Fisch|fish","Ich habe einen Hund.|I have a dog.|Ich habe ___ Hund.|einen|ein,einen,einem|Masculine object after haben: einen."],
+["A1.2","Clothes","die Hose|trousers;das Hemd|shirt;die Jacke|jacket;der Schuh|shoe;die Mütze|hat","Ich trage eine rote Jacke.|I am wearing a red jacket.|Ich trage ___ Jacke.|eine|ein,eine,einen|Jacke is feminine, so eine."],
+["A2.1","Extended family","die Großmutter|grandmother;der Großvater|grandfather;der Onkel|uncle;die Tante|aunt;die Eltern|parents","Meine Großmutter wohnt in Sfax.|My grandmother lives in Sfax.|Das sind ___ Eltern.|meine|mein,meine,meiner|Eltern is plural, so meine."],
+["A2.1","Body","der Kopf|head;die Hand|hand;der Fuß|foot;das Auge|eye;der Rücken|back","Mein Kopf tut weh.|My head hurts.|Mein Kopf ___ weh.|tut|tun,tut,tue|Third person singular: tut."],
+["A2.1","Weather","das Wetter|weather;die Sonne|sun;der Regen|rain;kalt|cold;heiß|hot","Heute ist das Wetter schön.|Today the weather is nice.|Es ___ heute.|regnet|regnen,regnet,regne|With es the verb ends in -t."],
+["A2.1","City places","die Bank|bank;das Krankenhaus|hospital;die Bäckerei|bakery;der Supermarkt|supermarket;die Apotheke|pharmacy","Die Apotheke ist neben der Bank.|The pharmacy is next to the bank.|Die Apotheke ist ___ der Bank.|neben|neben,für,ohne|neben takes the dative: der Bank."],
+["A2.1","Months","der Januar|January;der Mai|May;der Juli|July;der Oktober|October;der Dezember|December","Im Juli ist es sehr heiß.|In July it is very hot.|___ Juli ist es heiß.|Im|Am,Im,In|Months take im (in dem)."],
+["A2.2","Professions","der Lehrer|teacher;die Ärztin|doctor (female);der Ingenieur|engineer;der Koch|cook;die Verkäuferin|saleswoman","Er ist Ingenieur von Beruf.|He is an engineer by profession.|Sie ___ Ärztin.|ist|bin,ist,sind|sie (she) takes ist."],
+["A2.2","Hobbies","das Hobby|hobby;schwimmen|to swim;lesen|to read;die Musik|music;reisen|to travel","Mein Hobby ist Schwimmen.|My hobby is swimming.|Ich ___ gern Musik.|höre|höre,hörst,hört|With ich the verb ends in -e."],
+["A2.2","Restaurant","die Speisekarte|menu;die Rechnung|bill;bestellen|to order;lecker|tasty;die Suppe|soup","Ich möchte die Rechnung, bitte.|I would like the bill, please.|Ich ___ eine Suppe bestellen.|möchte|möchte,möchtest,möchten|ich möchte."],
+["B1.1","Technology","der Computer|computer;das Handy|mobile phone;das Passwort|password;die E-Mail|email;herunterladen|to download","Ich habe mein Passwort vergessen.|I forgot my password.|Ich ___ mein Passwort vergessen.|habe|habe,bin,werde|vergessen forms the perfect with haben."],
+["B1.2","Education","die Universität|university;das Studium|studies;die Prüfung|exam;der Abschluss|degree;die Note|grade","Ich muss für die Prüfung lernen.|I have to study for the exam.|Ich lerne ___ die Prüfung.|für|für,mit,von|lernen für = to study for."],
+["B2.2","Culture","die Kultur|culture;die Tradition|tradition;die Sprache|language;die Geschichte|history;das Erbe|heritage","Tunesien hat eine reiche Geschichte.|Tunisia has a rich history.|Tunesien hat eine reiche ___.|Geschichte|Geschichte,Geschichten,Geschichtlich|Singular feminine noun after eine."]];
+const G=[
+["A1.1","Grammar: Articles","der Mann|the man (masc.);die Frau|the woman (fem.);das Kind|the child (neut.);ein Tisch|a table;eine Lampe|a lamp","Der Mann liest das Buch.|The man reads the book.|___ Frau ist nett.|Die|Der,Die,Das|Frau is feminine, so die."],
+["A1.2","Grammar: Verb endings","ich lerne|I learn;du lernst|you learn;er lernt|he learns;wir lernen|we learn;ihr lernt|you (plural) learn","Du lernst jeden Tag Deutsch.|You learn German every day.|Du ___ jeden Tag.|arbeitest|arbeitest,arbeitst,arbeite|Stems ending in -t add an extra e: du arbeitest."],
+["A1.2","Grammar: Negation","kein Auto|no car;nicht gut|not good;keine Zeit|no time;Ich komme nicht|I am not coming;Das ist kein Hund|that is not a dog","Ich habe keine Zeit.|I have no time.|Ich habe ___ Auto.|kein|nicht,kein,keine|Auto is neuter, so kein."],
+["A2.1","Grammar: Accusative","den Mann|the man (object);einen Bruder|a brother (object);das Buch|the book (object);die Stadt|the city (object);einen Stift|a pen (object)","Ich sehe den Mann.|I see the man.|Ich sehe ___ Mann.|den|der,den,dem|The direct object is masculine, so den."],
+["A2.1","Grammar: Word order","Ich lerne heute Deutsch|I learn German today;Heute lerne ich Deutsch|today I learn German;Kommst du morgen?|are you coming tomorrow?;Wann kommt der Zug?|when does the train come?;Ich möchte Kaffee trinken|I would like to drink coffee","Heute lerne ich Deutsch.|Today I learn German.|Heute ___ ich Deutsch.|lerne|lerne,lernt,lernen|The conjugated verb stays in second position."],
+["A2.2","Grammar: Dative","mit dem Freund|with the friend;mit der Lehrerin|with the teacher;dem Kind helfen|to help the child;bei meiner Mutter|at my mother's;mit den Freunden|with the friends","Ich spreche mit dem Lehrer.|I speak with the teacher.|Ich gehe mit ___ Freund.|dem|den,dem,der|mit always takes the dative; masculine: dem."],
+["A2.2","Grammar: Modal verbs","ich kann|I can;ich muss|I must;ich will|I want;ich darf|I am allowed;ich soll|I should","Ich muss heute arbeiten.|I have to work today.|Ich ___ heute arbeiten.|muss|muss,musst,müssen|ich muss; the second verb stays an infinitive at the end."],
+["B1.1","Grammar: Perfekt","ich habe gemacht|I did;ich bin gefahren|I travelled;er hat gesagt|he said;wir sind angekommen|we arrived;sie hat gelernt|she learned","Wir sind nach Berlin gefahren.|We travelled to Berlin.|Wir ___ nach Berlin gefahren.|sind|haben,sind,waren|Movement verbs form the Perfekt with sein."],
+["B1.1","Grammar: Subordinate clauses","weil ich müde bin|because I am tired;dass er kommt|that he is coming;obwohl es regnet|although it rains;wenn ich Zeit habe|if I have time;ob du kommst|whether you are coming","Ich bleibe zu Hause, weil ich müde bin.|I stay at home because I am tired.|Ich bleibe zu Hause, weil ich müde ___.|bin|bin,bist,ist|After weil the verb goes to the end."],
+["B1.2","Grammar: Adjective endings","ein guter Freund|a good friend;eine schöne Stadt|a beautiful city;ein großes Haus|a big house;die neuen Bücher|the new books;mit dem alten Auto|with the old car","Das ist ein guter Freund.|That is a good friend.|Das ist ein gut___ Freund.|er|e,er,es|Masculine nominative after ein takes -er."],
+["B1.2","Grammar: Reflexive verbs","ich freue mich|I am happy;wir treffen uns|we meet;sie setzt sich|she sits down;du erinnerst dich|you remember;er interessiert sich|he is interested","Ich freue mich auf das Wochenende.|I look forward to the weekend.|Wir treffen ___ morgen.|uns|uns,sich,mich|wir takes uns."],
+["B2.1","Grammar: Konjunktiv II","ich wäre|I would be;ich hätte|I would have;ich würde gehen|I would go;ich könnte helfen|I could help;wenn ich reich wäre|if I were rich","Wenn ich Zeit hätte, würde ich reisen.|If I had time, I would travel.|Wenn ich reich ___, würde ich reisen.|wäre|bin,wäre,war|Unreal condition: Konjunktiv II of sein."],
+["B2.1","Grammar: Relative clauses","der Mann, der dort steht|the man who stands there;die Frau, die ich kenne|the woman whom I know;das Buch, das ich lese|the book that I read;die Stadt, in der ich wohne|the city where I live;der Freund, dem ich helfe|the friend whom I help","Das ist der Mann, der dort steht.|That is the man who stands there.|Das ist die Frau, ___ ich kenne.|die|der,die,das|The pronoun matches Frau (feminine): die."],
+["B2.2","Grammar: Indirect speech","Er sagt, er sei müde|he says he is tired;Sie meint, sie habe Zeit|she thinks she has time;Er fragte, ob ich käme|he asked whether I would come;Man sagt, es gebe Probleme|they say there are problems;Sie behauptet, sie wisse es|she claims to know it","Er sagt, er sei müde.|He says he is tired.|Sie sagt, sie ___ Zeit.|habe|hat,habe,haben|Konjunktiv I of haben: sie habe."],
+["B2.2","Grammar: Genitive","das Haus des Mannes|the man's house;die Farbe der Wand|the colour of the wall;wegen des Wetters|because of the weather;trotz des Regens|despite the rain;während der Woche|during the week","Das ist das Haus des Mannes.|That is the man's house.|Das ist das Haus ___ Mannes.|des|dem,des,den|Genitive masculine: des and -es on the noun."]];
+const TIP={
+"Greetings":"Use Guten Morgen in the morning, Guten Tag during the day and Guten Abend in the evening. Hallo and Tschüss are informal. Danke = thank you, Bitte = please or you're welcome.",
+"Introductions":"Introduce yourself with Ich heiße… or Ich bin…, and say where you come from with Ich komme aus + country. With ich the verb ends in -e: ich komme, ich heiße.",
+"Numbers 1–10":"Say z as 'ts' (zwei, zehn) and ei as 'eye'. ie sounds like 'ee' (vier). Practise by counting objects around you out loud every day.",
+"Food and drink":"Every noun has a gender: der (masculine), die (feminine), das (neuter). Always learn the noun WITH its article and write every noun with a capital letter: das Brot, die Milch.",
+"Family":"Possessives: mein for masculine and neuter, meine for feminine and plural: mein Vater, meine Mutter. Add -in for the female form of many words: der Lehrer, die Lehrerin.",
+"Everyday verbs":"Regular verbs drop -en and add endings: ich -e, du -st, er/sie/es -t, wir -en, ihr -t. Example: lernen → ich lerne, du lernst, er lernt.",
+"Travel":"zu + dem becomes zum, zu + der becomes zur: Ich fahre zum Bahnhof, zur Schule. Learn each place with its article: der Bahnhof, die Fahrkarte.",
+"Shopping":"Wie viel kostet das? asks the price. After möchte the second verb goes to the end: Ich möchte das Brot kaufen. Use the formal Sie with shop staff.",
+"Time and days":"Days and months are masculine. Use am with days (am Montag) and im with months (im Mai). gestern = yesterday, heute = today, morgen = tomorrow.",
+"Health":"Say Ich habe + noun for pain (Ich habe Kopfschmerzen) or Mein Kopf tut weh. To book a visit: Ich möchte einen Termin.",
+"Past tense":"Perfekt = haben or sein + past participle at the end: Ich habe gegessen. Verbs of movement use sein: Ich bin gegangen. Ich war = I was.",
+"Home":"Learn each room or furniture word with its article and plural: das Zimmer → die Zimmer. die Miete = rent, der Nachbar = male neighbour.",
+"Opinions":"Give opinions with Ich glaube, dass… or Meiner Meinung nach… In a dass-clause the verb goes to the end: Ich glaube, dass er recht hat.",
+"Work":"Job words: die Bewerbung, der Lebenslauf. Use reflexive: Ich bewerbe mich um eine Stelle. Formal emails use Sie and Sehr geehrte Damen und Herren.",
+"Plans and conditions":"wenn = if/when, falls = in case, obwohl = although. After a wenn-clause the verb comes first: Wenn es regnet, bleibe ich zu Hause.",
+"Environment":"Nouns ending in -ung are feminine: die Verschmutzung. Modal + infinitive: Wir müssen den Müll trennen. nachhaltig = sustainable.",
+"Media":"Passive = werden + past participle. Present: Der Bericht wird veröffentlicht. Past: Der Bericht wurde veröffentlicht.",
+"Feelings":"Many feelings use reflexive verbs with a preposition: sich freuen auf (look forward to), sich freuen über (be happy about), sich ärgern über (be annoyed about).",
+"Society":"Nouns ending in -heit, -keit and -ung are always feminine: die Gesellschaft, die Verantwortung, die Entwicklung. Abstract nouns are very common in B2 texts.",
+"Arguing":"Structure an argument: einerseits… andererseits…, darüber hinaus, dennoch, folglich. dennoch and folglich do not send the verb to the end: Es regnet, dennoch gehen wir.",
+"Passive and formal":"Passive = werden + participle: Das Haus wird gebaut (present), wurde gebaut (past). Es lässt sich erklären = it can be explained. sofern = provided that.",
+"Science and economy":"Many nouns come from verbs: forschen → die Forschung, wachsen → das Wachstum. Strong verbs change vowel: er wächst, sie fährt.",
+"Idioms":"Idioms cannot be translated word for word. Das ist mir Wurst = I don't care. Learn them as whole phrases and use them with friends, not in formal writing.",
+"Formal writing":"Formal letters open with Sehr geehrte Damen und Herren and close with Mit freundlichen Grüßen. Use Sie, formal vocabulary and full sentences.",
+"Colors":"After sein colours take no ending: Das Auto ist rot. Before a noun they take endings: das rote Auto, eine rote Jacke.",
+"Question words":"In W-questions the verb is in second place: Wo wohnst du? Wann kommt der Zug? Yes/no questions start with the verb: Wohnst du hier?",
+"Numbers 11–100":"11 and 12 are special (elf, zwölf). 13–19 = unit + zehn (dreizehn). Tens end in -zig (zwanzig). Age uses sein: Ich bin zwanzig Jahre alt.",
+"Animals":"Learn the gender with each animal: der Hund, die Katze, das Pferd. For a masculine object use einen: Ich habe einen Hund.",
+"Clothes":"Use tragen for wearing: Ich trage eine Jacke. Articles: die Hose, das Hemd, der Schuh. Shoes are usually plural: die Schuhe.",
+"Extended family":"die Eltern is always plural, so say meine Eltern. Grandparents together: die Großeltern. Possessives change with gender and case.",
+"Body":"Pain uses tut weh (singular) or tun weh (plural): Mein Kopf tut weh, Meine Füße tun weh.",
+"Weather":"Weather uses es: Es regnet, es schneit, es ist kalt. Seasons: der Frühling, der Sommer, der Herbst, der Winter.",
+"City places":"neben, in, an, auf, vor, hinter take the dative to say where something is: Die Apotheke ist neben der Bank. Ask: Wo ist die Bank?",
+"Months":"All months are masculine and use im: im Januar, im Mai. Dates use am + ordinal number: am 5. Mai.",
+"Professions":"Add -in for women: der Lehrer → die Lehrerin, der Koch → die Köchin. No article after sein: Er ist Ingenieur, Sie ist Ärztin.",
+"Hobbies":"gern shows you like doing something: Ich schwimme gern. Verbs used as nouns take a capital letter: das Schwimmen, das Lesen.",
+"Restaurant":"Polite requests: Ich möchte… or Ich hätte gern… Ask for the bill with Die Rechnung, bitte. bestellen = to order, lecker = tasty.",
+"Technology":"Many tech words come from English: das Handy, der Computer, die E-Mail. Separable verbs split in a sentence: Ich lade die Datei herunter.",
+"Education":"lernen für = to study for, die Prüfung bestehen = to pass the exam, durchfallen = to fail. das Studium = university studies.",
+"Culture":"For history use the simple past: Tunesien hatte eine reiche Geschichte. Words ending in -ur and -ion are feminine: die Kultur, die Tradition.",
+"Grammar: Articles":"Three genders: der (masculine), die (feminine), das (neuter). The plural is always die. Indefinite articles: ein / eine. Words ending in -ung, -heit, -keit are feminine; words ending in -chen are neuter.",
+"Grammar: Verb endings":"Regular verbs: stem + ending. ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. If the stem ends in -t or -d, add an extra e: du arbeitest.",
+"Grammar: Negation":"Use kein/keine to negate a noun: Ich habe keine Zeit. Use nicht for verbs and adjectives: Ich komme nicht. Das ist nicht gut.",
+"Grammar: Accusative":"The direct object takes the accusative. Only the masculine changes: der → den, ein → einen. Ich sehe den Mann. Die, das and eine stay the same.",
+"Grammar: Word order":"In statements the conjugated verb is always in second position: Heute lerne ich Deutsch. Yes/no questions start with the verb. W-questions put the verb after the question word.",
+"Grammar: Dative":"The indirect object and the prepositions mit, bei, nach, von, zu take the dative: der → dem, die → der, das → dem. Plural nouns add -n: mit den Freunden.",
+"Grammar: Modal verbs":"können, müssen, wollen, dürfen, sollen send the main verb to the end as an infinitive: Ich kann gut schwimmen. Forms: ich kann, du kannst, er kann.",
+"Grammar: Perfekt":"Perfekt = haben or sein + past participle at the end. Regular: ge- + stem + -t (gemacht). Irregular: ge- + stem + -en (gegangen). Movement verbs use sein.",
+"Grammar: Subordinate clauses":"After weil, dass, obwohl, wenn and ob the conjugated verb goes to the end: Ich bleibe zu Hause, weil ich müde bin. A comma separates the clauses.",
+"Grammar: Adjective endings":"Adjectives before nouns take endings. After ein + masculine: -er (ein guter Freund). After eine + feminine: -e (eine schöne Stadt). After ein + neuter: -es (ein großes Haus).",
+"Grammar: Reflexive verbs":"Reflexive pronouns: mich, dich, sich, uns, euch, sich. Ich freue mich. Many reflexive verbs take a preposition: sich interessieren für, sich erinnern an.",
+"Grammar: Konjunktiv II":"Used for wishes, unreal conditions and polite requests. Common forms: wäre, hätte, könnte, würde + infinitive. Wenn ich reich wäre, würde ich reisen.",
+"Grammar: Relative clauses":"The relative pronoun matches the noun's gender and its role in the clause: der Mann, der dort steht; die Frau, die ich kenne. The verb goes to the end.",
+"Grammar: Indirect speech":"Reported speech often uses Konjunktiv I: er sei, sie habe, es gebe. Er sagt, er sei müde. In spoken German dass-clauses or Konjunktiv II are also common.",
+"Grammar: Genitive":"The genitive shows possession: das Haus des Mannes (masculine and neuter add -(e)s), die Farbe der Wand (feminine: der). wegen, trotz and während take the genitive."};
+const ALL=[...L.map((l,i)=>[...l,E[i]]),...N,...G],RK=["A1.1","A1.2","A2.1","A2.2","B1.1","B1.2","B2.1","B2.2"];
+ALL.sort((x,y)=>RK.indexOf(x[0])-RK.indexOf(y[0]));
+const LS=ALL.map(([lv,t,s],n)=>({lv,t,n,items:s.split(";").map(x=>x.split("|"))}));
+const SE=ALL.map(a=>{const x=a[3].split("|");return{de:x[0],en:x[1],cl:x[2],an:x[3],op:x[4].split(","),nt:x[5]}});
+const $=s=>document.querySelector(s),V=$("#view");
+function updateHeaderActions(){
+  const back=document.getElementById('header-back');
+  const exitBtn=document.getElementById('header-exit');
+  if(!back || !exitBtn) return;
+  const isWelcome=tab==='welcome';
+  back.classList.toggle('hidden', isWelcome);
+  exitBtn.classList.toggle('hidden', isWelcome);
+  back.onclick=()=>{
+    if(S){
+      S=null; tab='path'; render(); return;
+    }
+    if(tab==='curriculum' || tab==='sounds'){ tab='path'; render(); return; }
+  };
+  exitBtn.onclick=()=>{ tab='welcome'; S=null; render(); };
+}
+const shuf=a=>{a=[...a];for(let j=a.length-1;j>0;j--){const k=Math.random()*(j+1)|0;[a[j],a[k]]=[a[k],a[j]]}return a};
+const CURRICULUM={
+ "A1.1":["Greetings","Introductions","Numbers 1–10","Colors","Question words","Grammar: Articles"],
+ "A1.2":["Food and drink","Family","Everyday verbs","Numbers 11–100","Animals","Clothes","Grammar: Verb endings","Grammar: Negation"],
+ "A2.1":["Travel","Shopping","Time and days","Extended family","Body","Weather","City places","Months","Grammar: Accusative","Grammar: Word order"],
+ "A2.2":["Health","Past tense","Home","Professions","Hobbies","Restaurant","Grammar: Dative","Grammar: Modal verbs"],
+ "B1.1":["Opinions","Work","Plans and conditions","Technology","Grammar: Perfekt","Grammar: Subordinate clauses"],
+ "B1.2":["Environment","Media","Feelings","Education","Grammar: Adjective endings","Grammar: Reflexive verbs"],
+ "B2.1":["Society","Arguing","Passive and formal","Grammar: Konjunktiv II","Grammar: Relative clauses"],
+ "B2.2":["Science and economy","Idioms","Formal writing","Culture","Grammar: Indirect speech","Grammar: Genitive"]
+};
+let prog={},tab="path",S=null;
+try{prog=JSON.parse(localStorage.getItem("wp3")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("wp3",JSON.stringify(prog))}catch(e){}};
+function speak(t,r=.9){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/…/g,""));u.lang="de-DE";u.rate=r;const v=speechSynthesis.getVoices().find(v=>v.lang&&v.lang.startsWith("de"));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
+const norm=s=>s.toLowerCase().replace(/[.,!?'’"]/g,"").replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/\s+/g," ").trim();
+const art=d=>{const m=d.match(/^(der|die|das) (.*)/);return m?`<span class="${m[1]}">${m[1]}</span> ${m[2]}`:d};
+const passed=n=>(prog[n]||0)>=70;
+const sw=it=>{const m=it[0].match(/^(?:(?:der|die|das) )?(\S+)$/);return m?m[1]:null};
+function head(){const d=LS.filter(x=>passed(x.n)).length;$("#bar").style.width=d/LS.length*100+"%";$("#stat").textContent=d+"/"+LS.length+" lessons · "+(prog.x||0)+" XP"}
+function render(){
+  if(tab==="welcome") return welcome();
+  const header=document.querySelector("header"); if(header) header.style.display="";
+  const nav=document.querySelector("nav"); if(nav) nav.style.display="";
+  const bar=document.getElementById("bar"); if(bar&&bar.parentElement) bar.parentElement.style.display="";
+  updateHeaderActions();
+  head();
+  document.querySelectorAll("nav button").forEach(b=>b.classList.remove("hidden"));
+  document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===tab));
+  if(S){if(tab==="curriculum")tab="path";return [learn,practice,result][S.step]()}
+  if(tab==="curriculum")return curriculum();if(tab==="sounds")return sounds();return path();
+}
+function curriculum(){
+ const rows=Object.entries(CURRICULUM).map(([level, items])=>{
+  const idx=RK.indexOf(level);
+  const done=LS.filter(x=>x.lv===level).every(x=>passed(x.n));
+  const percent=LS.filter(x=>x.lv===level).reduce((sum,x)=>sum+(prog[x.n]||0),0)/Math.max(1,LS.filter(x=>x.lv===level).length);
+  return `<div class="card" style="margin-bottom:12px;padding:16px">
+    <div class="top"><span class="tag">${level}</span><span class="tag ${done?"pass":""}">${Math.round(percent)}% complete</span></div>
+    <h3 style="margin:8px 0 10px">${level} pathway</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px">${items.map(x=>`<span class="chip">${x}</span>`).join("")}</div>
+    <div class="row"><button class="btn primary" data-level="${idx}">Start ${level}</button></div>
+  </div>`;
+ }).join("");
+ V.innerHTML=`<div class="top" style="margin-bottom:12px"><button class="back" id="bk">← Course</button><span class="tag">Allmend curriculum map</span></div>${rows}`;
+ $("#bk").onclick=()=>{tab="path";S=null;render()};
+ V.querySelectorAll("[data-level]").forEach(btn=>btn.onclick=()=>{const n=Number(btn.dataset.level); start(n); });
+}
+function path(){
+  const unitNames={"A1.1":"Basics 1","A1.2":"Basics 2","A2.1":"Travel & City","A2.2":"Life & Home","B1.1":"Work & Plans","B1.2":"World & Media","B2.1":"Society & Ideas","B2.2":"Advanced German"};
+  const cards=RK.map((level, idx)=>{
+    const items=CURRICULUM[level];
+    const lessonEntries=items.map((item, itemIndex)=>{
+      const targetIdx = LS.findIndex(x=>x.lv===level && x.t===item);
+      const target = targetIdx >= 0 ? LS[targetIdx] : null;
+      const open = target ? (idx===0 || targetIdx===0 || LS.slice(0,targetIdx).every(x=>passed(x.n))) : false;
+      const done = target ? passed(target.n) : false;
+      const active = target && S && S.les && S.les.n===target.n;
+      return `<button class="unit-lesson ${done?"done":open?"active":"locked"}" data-n="${target ? target.n : -1}" ${open && target ? "":"disabled"}>
+        <span class="mini-icon">${done?"✓":open?"•":"🔒"}</span><span>${item}</span>
+      </button>`;
+    }).join("");
+    const complete=items.filter(item=>{const idx2=LS.findIndex(x=>x.lv===level && x.t===item); return idx2>=0 && passed(LS[idx2].n);}).length;
+    const total=items.length;
+    return `<div class="unit-card">
+      <div class="unit-header">
+        <span class="unit-badge">Unit ${idx+1}</span>
+        <span class="unit-score"><span class="dot"></span>${complete}/${total}</span>
+      </div>
+      <h3>${unitNames[level]||level}</h3>
+      <div class="unit-grid">${lessonEntries}</div>
+    </div>`;
+  }).join("");
+
+  V.innerHTML=`<div class="unit-shell">${cards}</div>`;
+  V.querySelectorAll(".unit-lesson").forEach(btn=>{
+    btn.onclick=()=>{
+      const n=Number(btn.dataset.n);
+      if(Number.isFinite(n) && n>=0) start(n);
+    };
+  });
+}
+function start(n){S={les:LS[n],step:0,k:-1};tab="path";render()}
+const out=()=>{S=null;tab="path";render()};
+const back=()=>`<p><button class="back" id="bk">← Course</button> <span class="tag">${S.les.lv} · ${S.les.t}</span></p>`;
+function teach(){V.innerHTML=back()+`<div class="card" style="align-items:flex-start;text-align:left"><div class="tag">Step 1 of 3 · Teacher</div><h3 style="margin:4px 0">${S.les.t}</h3><p style="margin:0;font-size:1.05rem;line-height:1.65">${TIP[S.les.t]||""}</p></div><div class="row"><button class="btn primary" id="nx">Start learning</button></div>`;$("#bk").onclick=out;$("#nx").onclick=()=>{S.k=0;render()}}
+function learn(){if(S.k<0)return teach();const it=S.les.items[S.k],last=S.k===S.les.items.length-1;
+ V.innerHTML=back()+`<div class="card"><div class="tag">Step 2 of 3 · Learn ${S.k+1}/${S.les.items.length}</div><div class="word">${art(it[0])}</div><div class="sub">${it[1]}</div></div>
+ <div class="row"><button class="btn" id="p1">Play</button><button class="btn" id="p2">Slow</button><button class="btn mic-btn" id="mic" aria-label="Speak"><span class="mic">🎤</span><span>Speak</span></button></div>
+ <div class="heard" id="heard" aria-live="polite"></div>
+ <div class="row"><button class="btn primary" id="nx">${last?"Start practice":"Next"}</button></div>`;
+ $("#bk").onclick=out;$("#p1").onclick=()=>speak(it[0]);$("#p2").onclick=()=>speak(it[0],.5);
+ $("#mic").onclick=()=>tryMic(it[0],$("#heard"),$("#mic"),()=>{$("#heard").textContent="Heard: "+it[0];$("#heard").className="heard okc";});
+ $("#nx").onclick=()=>{if(last)startPractice();else S.k++;render()};speak(it[0])}
+function startPractice(){const it=shuf(S.les.items),n=i=>it[i%it.length];
+ S.q=[{t:"listen",it:n(0)},{t:"mc",it:n(1)},{t:"match"},{t:"type",it:n(2)},{t:"read"},{t:"cloze"},{t:"dict",it:n(3)},{t:"say",it:n(4)},{t:"bank"},{t:"scr"},{t:"sdict"}];
+ Object.assign(S,{qi:0,h:3,sc:0,xp:0,done:0,step:1})}
+function shell(prompt,area,chk){V.innerHTML=back()+`<div class="top"><span aria-label="Hearts">${"♥".repeat(S.h)}${"♡".repeat(3-S.h)}</span><span class="tag">${S.qi+1}/${S.q.length}</span></div><div class="card">${prompt}</div>${area}<div class="fb" id="fb" aria-live="polite"></div><div class="row"><button class="btn primary" id="ck" ${chk?"":'style="display:none"'}>Check</button></div>`;$("#bk").onclick=out;const p=$("#p1");if(p)p.onclick=()=>speak(S.say)}
+function finish(ok,msg){if(S.done)return;S.done=1;const f=$("#fb");f.className="fb "+(ok?"okc":"badc");f.textContent=(ok?"Richtig! ":"")+(msg||"");if(ok){S.sc++;S.xp+=10}else S.h--;const b=$("#ck");b.style.display="";b.textContent="Continue";b.onclick=adv;b.focus()}
+function adv(){S.qi++;S.done=0;if(S.h<=0){S.fail=1;S.step=2}else if(S.qi>=S.q.length)S.step=2;render()}
+function dist(it,f){const pool=LS.filter(x=>x.lv===S.les.lv).flatMap(x=>x.items).filter(x=>x[f]!==it[f]);return shuf([it,...shuf(pool).filter((x,i,a)=>a.findIndex(y=>y[f]===x[f])===i).slice(0,3)])}
+function mc(prompt,labels,ans,say,auto,note){S.say=say;shell(prompt,`<div class="opts">${labels.map((x,i)=>`<button class="opt" data-i="${i}">${x}</button>`).join("")}</div>`,0);
+ if(auto)speak(say);
+ V.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if(S.done)return;const l=labels[+b.dataset.i],ok=l===ans;
+  V.querySelectorAll(".opt").forEach(x=>{if(labels[+x.dataset.i]===ans)x.classList.add("ok")});if(!ok)b.classList.add("bad");
+  finish(ok,(ok?"":"Answer: "+ans+". ")+(note||""));if(say&&!auto)speak(say)})}
+function typ(prompt,ans,say,auto){S.say=say;shell(prompt,`<input id="in" class="inp" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Your answer"><div style="margin-top:8px">${["ä","ö","ü","ß"].map(c=>`<button class="chip" data-c="${c}">${c}</button>`).join("")}</div>`,1);
+ const inp=$("#in"),go=()=>{if(S.done||!inp.value.trim())return;const v=inp.value.trim(),ok=norm(v)===norm(ans);inp.disabled=true;finish(ok,ok?(v!==ans?"Check the spelling: "+ans:""):"Answer: "+ans);speak(ans)};
+ $("#ck").onclick=go;inp.onkeydown=e=>{if(e.key==="Enter")go()};
+ V.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{inp.value+=b.dataset.c;inp.focus()});
+ if(auto)speak(say);inp.focus()}
+function tap(prompt,parts,target,sep){const p=shuf(parts);let c=[];shell(prompt,`<div class="line" id="ln"></div><div id="pb" style="margin-top:10px"></div>`,1);
+ const draw=()=>{$("#ln").innerHTML=c.map(i=>`<button class="chip" data-r="${i}">${p[i]}</button>`).join("")||'<span class="tag">Tap the pieces in order</span>';
+  $("#pb").innerHTML=p.map((x,i)=>`<button class="chip${c.includes(i)?" used":""}" data-a="${i}">${x}</button>`).join("");
+  if(!S.done){V.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{c=c.filter(i=>i!==+b.dataset.r);draw()});V.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{c.push(+b.dataset.a);draw()})}};
+ draw();$("#ck").onclick=()=>{if(S.done||!c.length)return;const v=c.map(i=>p[i]).join(sep),ok=v===target;finish(ok,ok?"":"Answer: "+target);speak(target)}}
+function match(){const pr=shuf(S.les.items).slice(0,4),A=shuf(pr),B=shuf(pr);let sel=null,bad=0,left=pr.length;S.say="";
+ shell(`<p class="q">Match the pairs</p>`,`<div class="cols"><div>${A.map((x,i)=>`<button class="opt" data-l="${i}">${x[0]}</button>`).join("")}</div><div>${B.map((x,i)=>`<button class="opt" data-r="${i}">${x[1]}</button>`).join("")}</div></div>`,0);
+ V.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{if(b.disabled)return;speak(A[+b.dataset.l][0]);V.querySelectorAll("[data-l]").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");sel=b});
+ V.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{if(!sel||b.disabled)return;
+  if(A[+sel.dataset.l]===B[+b.dataset.r]){sel.classList.remove("sel");sel.classList.add("ok");b.classList.add("ok");sel.disabled=b.disabled=true;sel=null;if(!--left)finish(!bad,bad?"Done, with "+bad+" wrong tap(s).":"")}
+  else{bad++;b.classList.add("bad");setTimeout(()=>b.classList.remove("bad"),500)}})}
+function practice(){const e=S.q[S.qi],se=SE[S.les.n];let T=e.t,it=e.it;
+ if(T==="scr"){it=S.les.items.find(sw);if(!it){T="type";it=S.les.items[0]}}
+ const sp=`<button class="btn primary" id="p1" style="flex:none;padding:12px 26px">Play</button>`;
+ if(T==="listen"){const o=dist(it,1);mc(`<p class="q">Listen and choose the meaning</p>${sp}`,o.map(x=>x[1]),it[1],it[0],1)}
+ else if(T==="mc"){const o=dist(it,0);mc(`<p class="q">Choose the German</p><div class="word">${it[1]}</div>`,o.map(x=>x[0]),it[0],it[0],0)}
+ else if(T==="type")typ(`<p class="q">Type it in German (with the article)</p><div class="word">${it[1]}</div>`,it[0],it[0])
+ else if(T==="dict")typ(`<p class="q">Type what you hear</p>${sp}`,it[0],it[0],1)
+ else if(T==="sdict")typ(`<p class="q">Type the sentence you hear</p>${sp}`,se.de,se.de,1)
+ else if(T==="read"){const o=shuf([se,...shuf(SE.filter(x=>x!==se)).slice(0,3)]);mc(`<p class="q">Read and choose the meaning</p><div class="word" style="font-size:1.4rem">${se.de}</div>${sp}`,o.map(x=>x.en),se.en,se.de,0)}
+ else if(T==="cloze")mc(`<p class="q">Grammar: complete the sentence</p><div class="word" style="font-size:1.5rem">${se.cl.replace("___","_____")}</div><div class="sub" style="font-size:.95rem">${se.en}</div>`,shuf(se.op),se.an,"",0,se.nt)
+ else if(T==="bank"){const t=se.de.split(" "),x=shuf(SE.filter(y=>y!==se).flatMap(y=>y.de.split(" "))).filter(w=>!t.includes(w)).slice(0,2);tap(`<p class="q">Build the sentence in German</p><div class="word" style="font-size:1.4rem">${se.en}</div>`,[...t,...x],se.de," ")}
+ else if(T==="scr"){const w=sw(it);tap(`<p class="q">Spell the word (mind the capital letters)</p><div class="word">${it[1]}</div>`,w.split(""),w,"")}
+ else if(T==="say")say(it)
+ else match()}
+function result(){const n=S.les.n,p=Math.round(S.sc/S.q.length*100),ok=!S.fail;
+ if(ok){if(p>(prog[n]||0))prog[n]=p;prog.x=(prog.x||0)+S.xp;save()}head();
+ V.innerHTML=back()+`<div class="card"><div class="word">${ok?p+"%":"Out of hearts"}</div><div class="sub">${ok?"Lesson passed. +"+S.xp+" XP. Gut gemacht!":"Review the words and try again."}</div></div>
+ <div class="row"><button class="btn" id="rt">${ok?"Practice again":"Retry"}</button>${ok&&LS[n+1]?`<button class="btn primary" id="nl">Next lesson</button>`:""}</div>`;
+ $("#bk").onclick=out;$("#rt").onclick=()=>start(n);if($("#nl"))$("#nl").onclick=()=>start(n+1)}
+const PAIRS=[["Wein","Wien"],["schön","schon"],["Mutter","Mütter"],["bieten","bitten"],["Ofen","offen"],["Staat","Stadt"],["Miete","Mitte"],["fühlen","füllen"],["Zahl","Saal"],["Wein","Bein"],["Wall","Ball"],["Hüte","Hütte"],["mich","mach"],["Bett","Beet"]];
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let noMic=!SR,pv="rules",PQ=null,PW=null;
+function listen(cb){try{const r=new SR();r.lang="de-DE";r.maxAlternatives=3;r.onresult=e=>cb([...e.results[0]].map(x=>x.transcript));r.onerror=()=>cb(null);r.start()}catch(e){cb(null)}}
+function setVolumeLevel(value){const fill=document.getElementById('vol-fill');if(fill)fill.style.width=Math.max(0,Math.min(100,value))+'%'}
+function startVolumeMeter(){const fill=document.getElementById('vol-fill');if(!fill||!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)return;let cleanup=null;
+ navigator.mediaDevices.getUserMedia({audio:true}).then(stream=>{
+  const AudioCtx=window.AudioContext||window.webkitAudioContext; if(!AudioCtx){setVolumeLevel(0);return}
+  const ctx=new AudioCtx(); const source=ctx.createMediaStreamSource(stream); const analyser=ctx.createAnalyser(); analyser.fftSize=256; source.connect(analyser); const data=new Uint8Array(analyser.frequencyBinCount);
+  const tick=()=>{if(!document.getElementById('vol-fill')){stream.getTracks().forEach(t=>t.stop());ctx.close();return}analyser.getByteFrequencyData(data);let total=0;for(let i=0;i<data.length;i++)total+=data[i];const avg=(total/data.length)/255;setVolumeLevel(avg*100);if(document.querySelector('.speech-mic')&&document.querySelector('.speech-mic').classList.contains('is-listening'))requestAnimationFrame(tick);else setVolumeLevel(0)};
+  cleanup=()=>{stream.getTracks().forEach(t=>t.stop());ctx.close();setVolumeLevel(0)};
+  requestAnimationFrame(tick);
+ }).catch(()=>setVolumeLevel(0));
+ return cleanup;
+}
+function tryMic(txt,fb,btn,ok){if(noMic){btn.classList.remove('is-listening','is-correct');btn.innerHTML='<span class="mic">🎤</span>';setVolumeLevel(0);fb.className='speech-status bad';fb.textContent='Microphone unavailable on this device';const rec=document.getElementById('speech-recognized');if(rec)rec.textContent='';return}fb.className='speech-status';fb.textContent='Listening… speak now';btn.classList.remove('is-correct');btn.classList.add('is-listening');setVolumeLevel(10);const rec=document.getElementById('speech-recognized');if(rec)rec.textContent='';const stopMeter=startVolumeMeter();
+ listen(a=>{btn.classList.remove('is-listening');setVolumeLevel(0);if(stopMeter)stopMeter();if(!a){btn.innerHTML='<span class="mic">🎤</span>';fb.className='speech-status bad';fb.textContent='Microphone unavailable on this device';if(rec)rec.textContent='';return}else {const heard=a.filter(Boolean).slice(0,3);const heardText=heard.join(" / ");const heardEl=document.getElementById("heard");if(heardEl)heardEl.textContent='Heard: '+heardText; if(rec)rec.textContent=heard[0]||''; if(a.some(x=>norm(x)===norm(txt))){btn.classList.add('is-correct');ok();}else {fb.className='speech-status bad';fb.textContent='I heard: '+heardText+'. Listen again and try once more.'}}})}
+function say(it){const txt=it[0];S.say=txt;V.innerHTML=back()+`<div class="speech-panel"><div class="speech-card"><div class="speech-label">Speak this sentence</div><div class="speech-word">${art(txt)}</div><div class="speech-sub">${it[1]}</div><div class="speech-mic-wrap"><button class="speech-mic" id="mic" aria-label="Speak"><span class="mic">🎤</span></button></div><div class="volume-wrap"><div class="volume-bar"><div class="volume-fill" id="vol-fill"></div></div></div><div class="speech-status" id="fb" aria-live="polite">${noMic?'Microphone unavailable on this device':'Tap the mic to speak'}</div><div class="speech-recognized" id="speech-recognized" aria-live="polite"></div></div><div class="row speech-actions"><button class="btn" id="sk">Skip</button></div></div>`;setVolumeLevel(0);speak(txt);$("#mic").onclick=()=>{if(!S.done){const btn=$("#mic");const fb=$("#fb");if(noMic){fb.className='speech-status bad';fb.textContent='Microphone unavailable on this device';return}tryMic(txt,fb,btn,()=>{fb.className='speech-status ok';fb.textContent='You are correct';const rec=document.getElementById('speech-recognized');if(rec)rec.textContent=txt;finish(true,"")})}};$("#sk").onclick=()=>{if(S.done)return;S.sc++;adv()}}
+function sounds(){const bar=`<div class="row" style="margin:0 0 14px">${[["rules","Rules"],["pairs","Listening"],["speak","Speaking"]].map(([k,l])=>`<button class="btn${pv===k?" primary":""}" data-p="${k}">${l}</button>`).join("")}</div>`;
+ V.innerHTML=bar+`<div id="pv"></div>`;V.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{pv=b.dataset.p;PQ=null;PW=null;sounds()});
+ const box=$("#pv");
+ if(pv==="rules"){box.innerHTML=`<p class="tag">Tap a word to hear it. Voices depend on your device.</p>`+R.map(([r,w])=>`<div class="rule"><p>${r}</p>${w.split(", ").map(x=>`<button class="chip" data-w="${x}">${x}</button>`).join("")}</div>`).join("");box.querySelectorAll(".chip").forEach(b=>b.onclick=()=>speak(b.dataset.w))}
+ else if(pv==="pairs")pairs(box);else speaking(box)}
+function pairs(box){if(!PQ)PQ={i:0,sc:0,q:shuf(PAIRS).slice(0,8)};
+ if(PQ.i>=PQ.q.length){box.innerHTML=`<div class="card"><div class="word">${PQ.sc}/${PQ.q.length}</div><div class="sub">${PQ.sc>=6?"Your ear is getting sharp!":"Replay the sounds and try again."}</div></div><div class="row"><button class="btn primary" id="ag">Play again</button></div>`;$("#ag").onclick=()=>{PQ=null;sounds()};return}
+ const p=PQ.q[PQ.i],w=p[Math.random()*2|0],o=shuf(p);let done=0;
+ box.innerHTML=`<div class="card"><div class="tag">${PQ.i+1}/${PQ.q.length} · Similar sounds</div><p class="q">Which word did you hear?</p><button class="btn primary" id="p1" style="flex:none;padding:12px 26px">Play</button></div><div class="opts">${o.map((x,i)=>`<button class="opt" data-i="${i}">${x}</button>`).join("")}</div><div class="fb" id="fb"></div><div class="row"><button class="btn primary" id="nx" style="display:none">Next</button></div>`;
+ $("#p1").onclick=()=>speak(w,.7);speak(w,.7);
+ box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if(done)return;done=1;const ok=o[+b.dataset.i]===w;box.querySelectorAll(".opt").forEach(x=>{if(o[+x.dataset.i]===w)x.classList.add("ok")});if(!ok)b.classList.add("bad");if(ok)PQ.sc++;
+  $("#fb").className="fb "+(ok?"okc":"badc");$("#fb").textContent=ok?"Richtig!":"It was "+w;$("#nx").style.display="";$("#nx").onclick=()=>{PQ.i++;sounds()}})}
+function speaking(box){if(!PW){const a=R[Math.random()*R.length|0],ws=a[1].split(", ");PW=[a[0],ws[Math.random()*ws.length|0]]}
+ const readyText=noMic?'Microphone unavailable on this device':'Tap the mic to speak';
+ box.innerHTML=`<div class="speech-panel"><div class="speech-card"><div class="speech-label">Speak this word</div><div class="speech-word">${PW[1]}</div><div class="speech-sub">${PW[0]}</div><div class="speech-mic-wrap"><button class="speech-mic" id="mic" aria-label="Speak"><span class="mic">🎤</span></button></div><div class="volume-wrap"><div class="volume-bar"><div class="volume-fill" id="vol-fill"></div></div></div><div class="speech-status" id="fb" aria-live="polite">${readyText}</div><div class="speech-recognized" id="speech-recognized" aria-live="polite"></div></div><div class="row"><button class="btn" id="p1">Play</button><button class="btn" id="p2">Slow</button></div><div class="row speech-actions"><button class="btn" id="nx">Next word</button></div></div>`;
+ setVolumeLevel(0);$("#p1").onclick=()=>speak(PW[1]);$("#p2").onclick=()=>speak(PW[1],.5);speak(PW[1]);
+ $("#mic").onclick=()=>{const btn=$("#mic");const fb=$("#fb");if(noMic){fb.className='speech-status bad';fb.textContent='Microphone unavailable on this device';return}tryMic(PW[1],fb,btn,()=>{fb.className='speech-status ok';fb.textContent='You are correct';const rec=document.getElementById('speech-recognized');if(rec)rec.textContent=PW[1];btn.classList.add('is-correct');const el=document.getElementById("heard");if(el)el.textContent="Heard: "+PW[1]});};
+ $("#nx").onclick=()=>{PW=null;sounds()}}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{tab=b.dataset.t;S=null;render()});
+const navButtons=["Course","Pronunciation"];
+const navWrap=document.querySelector("nav");
+if(navWrap&&!navWrap.querySelector('[data-t="curriculum"]')){
+ const btn=document.createElement("button");
+ btn.type="button";btn.dataset.t="curriculum";btn.textContent="Curriculum";btn.setAttribute("aria-pressed","false");
+ btn.onclick=()=>{tab="curriculum";S=null;render()};
+ navWrap.appendChild(btn);
+}
+try{speechSynthesis.getVoices()}catch(e){}
+let initialTab = "welcome";
+tab = initialTab;
+render();
+</script>
+</body>
+</html>
