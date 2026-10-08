@@ -1,0 +1,6 @@
+{
+  "appId": "com.deutschquest.app",
+  "appName": "DeutschQuest",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

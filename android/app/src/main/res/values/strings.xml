@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">DeutschQuest</string>
+    <string name="title_activity_main">DeutschQuest</string>
+    <string name="package_name">com.deutschquest.app</string>
+    <string name="custom_url_scheme">com.deutschquest.app</string>
+</resources>

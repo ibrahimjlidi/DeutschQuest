@@ -466,8 +466,8 @@ function result(){const n=S.les.n,p=Math.round(S.sc/S.q.length*100),ok=!S.fail;
  <div class="row"><button class="btn" id="rt">${ok?"Practice again":"Retry"}</button>${ok&&LS[n+1]?`<button class="btn primary" id="nl">Next lesson</button>`:""}</div>`;
  $("#bk").onclick=out;$("#rt").onclick=()=>start(n);if($("#nl"))$("#nl").onclick=()=>start(n+1)}
 const PAIRS=[["Wein","Wien"],["schön","schon"],["Mutter","Mütter"],["bieten","bitten"],["Ofen","offen"],["Staat","Stadt"],["Miete","Mitte"],["fühlen","füllen"],["Zahl","Saal"],["Wein","Bein"],["Wall","Ball"],["Hüte","Hütte"],["mich","mach"],["Bett","Beet"]];
-const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let noMic=!SR,pv="rules",PQ=null,PW=null;
-function listen(cb){try{const r=new SR();r.lang="de-DE";r.maxAlternatives=3;r.onresult=e=>cb([...e.results[0]].map(x=>x.transcript));r.onerror=()=>cb(null);r.start()}catch(e){cb(null)}}
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;const nativeApp=!!window.Capacitor?.isNativePlatform?.();let noMic=!SR&&!nativeApp,pv="rules",PQ=null,PW=null;
+function listen(cb){const nativeSpeech=window.NativeSpeechRecognition;if(nativeApp&&nativeSpeech){nativeSpeech.requestPermissions().then(permission=>{if(permission.speechRecognition!=="granted")throw new Error("Speech permission denied");return nativeSpeech.start({language:"de-DE",maxResults:3,popup:false})}).then(result=>cb(result.matches||null)).catch(()=>cb(null));return}if(!SR){cb(null);return}try{const r=new SR();r.lang="de-DE";r.maxAlternatives=3;r.onresult=e=>cb([...e.results[0]].map(x=>x.transcript));r.onerror=()=>cb(null);r.start()}catch(e){cb(null)}}
 function setVolumeLevel(value){const fill=document.getElementById('vol-fill');if(fill)fill.style.width=Math.max(0,Math.min(100,value))+'%'}
 function startVolumeMeter(){const fill=document.getElementById('vol-fill');if(!fill||!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)return;let cleanup=null;
  navigator.mediaDevices.getUserMedia({audio:true}).then(stream=>{
